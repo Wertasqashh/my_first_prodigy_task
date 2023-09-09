@@ -1,0 +1,294 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(you.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #88BDBC
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    background-color: lightgray;
+    border: none;
+    padding: 12px 15px;
+    margin-left: 70px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 55px;
+    color: #88BDBC;
+    transition: all 0.3s;
+}
+
+h1:hover {
+    transform: translateY(-10px);
+}
+
+.main ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.main ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: maroon;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.main ul li a:hover {
+    color: white;
+}
+
+.main ul li a:hover:after {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 23px;
+}
+
+.main ul {
+    word-spacing: 30px;
+}
+
+img {
+    float: left;
+}
+
+#img-one {
+    margin: 0;
+}
+
+.search-input {
+    width: 200px;
+    padding-left: 150px;
+    float: right;
+}
+
+#a,
+#b {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s;
+}
+
+#a:hover {
+    transform: translateY(-10px);
+    color: black;
+}
+
+#b:hover {
+    transform: translateY(-10px);
+    color: black;
+}
+
+.text {
+    margin-left: 65px;
+    margin-top: 100px;
+    padding-bottom: 40wspx;
+}
+
+h2 {
+    margin-left: 345px;
+    font-weight: lighter;
+    font-family: SpaceGrotesk-Light;
+    color: #88BDBC
+}
+
+.btn1 {
+    border-radius: 20px;
+    border: 1px solid olive;
+    background-color: #88BDBC;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 12px 15px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin-left: 125px;
+    transition: all 0.3s;
+}
+
+.btn1:hover {
+    transform: translateY(-10px);
+    background-color: #88BDBC;
+    color: black;
+}
+
+.div-one {
+    display: flex;
+    padding: 200px 65px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+#img {
+    --b: 10px;
+    /* control the size */
+    padding: var(--b);
+    border: calc(2*var(--b)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1*var(--b));
+    background: conic-gradient(from 90deg at 1px 1px, #0000 90deg, #000 0);
+    margin-left: 270px;
+    filter: grayscale(.4);
+    transition: .3s;
+}
+
+#img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1) rotate(7deg);
+}
+
+/* Hide the images by default */
+
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* media queries and adjust styles as needed for other screen sizes */
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    #a,
+    #b {
+        font-size: 14px;
+    }
+
+    .btn1 {
+        margin-left: 0;
+        padding: 7px 10px;
+        font-size: 10px;
+    }
+
+    input {
+        display: none;
+    }
+    .main{
+        margin-left: 0;
+        display: block;
+    }
+
+
+}
